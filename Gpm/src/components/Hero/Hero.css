@@ -1,0 +1,40 @@
+/* Hero.css */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    padding: 20px;
+    background-color: white; /* Cor de fundo */
+    height: 85vh; /* Altura total da viewport */
+    gap: 10px; /* Espaço entre os itens */
+   }
+   
+   h1 {
+    font-size: 2.5rem; /* Tamanho da fonte do título */
+    color: #333; /* Cor do texto */
+   }
+   
+   img {
+    max-width: 50%; /* Limita a largura da imagem para 50% do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+   }
+   
+
+
+
+@keyframes fadeInUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+   }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+   }
+  }
+  
+  .fadeInUp-animation {
+   animation: 1.5s fadeInUp;
+  }
+  

@@ -1,25 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Navbar from './components/Navbar/Navbar'
-import Hero from './components/Hero'
+import { useState } from 'react';
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import './App.css';
+import Navbar from './components/Navbar/Navbar';
+import Hero from './components/Hero/Hero';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Equipe from './components/Equipe/Equipe';
+import PropostaMER from './components/PropotaMER/PropostaMER';
+import DescricaoProblema from './components/DescricaoProblema/DescricaoProblema';
+import AnaliseRequisitos from './components/AnaliseRequisitos/AnaliseRequisitos';
+
+// Componentes de exemplo para as rotas
+
 
 function App() {
-  const [count, setCount] = useState(0)
+ const [count, setCount] = useState(0);
 
-  return (
-    <>
+ return (
+    <Router>
       <div>
-        <Navbar/>
-        <Hero/>
-        <h1>Nosso Site</h1>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/home" element={<Hero />} />
+          <Route path="/equipe" element={<Equipe/>} />
+          <Route path="/analisederequisitos" element={<AnaliseRequisitos/>} />
+          <Route path="/descricaodoproblema" element={<DescricaoProblema/>} />
+          <Route path="/propostademer" element={<PropostaMER/>} />
+          
+        </Routes>
+        
+        
       </div>
-      
-    </>
-  )
-    
-  
+    </Router>
+ );
 }
 
-export default App
+export default App;
