@@ -1,0 +1,11 @@
+.paragrafo {
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 20px 30px;
+    margin: 0px 1.5%;
+    display: inline-block;
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+ 
+}
