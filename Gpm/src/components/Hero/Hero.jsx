@@ -1,15 +1,22 @@
 import React from 'react';
-import Gp from '../../assets/GP.png'; // Importando a imagem
-import './Hero.css'; // Importando o arquivo CSS
-import logo from '../../assets/Logo.png'
+import Gp from '../../assets/GP.png'; // Importing image
+import './Hero.css'; // Importing CSS file
+import logo from '../../assets/Logo.png';
 
 const Hero = () => {
- return (
+  return (
     <div className='container'>
-      <h1 className='fadeInUp-animation'>Encontre os mais novos projeto <br /> do IFRO</h1>
-      <img src={logo} alt="Descrição da imagem" />
+      <div >
+      <h1 className='fadeInUp-animation'>Encontre os mais novos projetos <br /> do IFRO</h1>
+      <button className="animated-button">
+        <span>Explore Agora</span>
+      </button>
+      </div>
+      <img src={logo} alt="Descrição da imagem" />  
+    
     </div>
- );
+    
+  );
 }
 
 export default Hero;

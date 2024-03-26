@@ -23,18 +23,70 @@
 
 
 
+
+  
+
+  /* Add animation keyframes */
+/* Animation keyframes */
 @keyframes fadeInUp {
-    0% {
-      transform: translateY(100%);
-      opacity: 0;
+   from {
+     opacity: 0;
+     transform: translateY(20px);
    }
-    100% {
-      transform: translateY(0%);
-      opacity: 1;
+   to {
+     opacity: 1;
+     transform: translateY(0);
    }
-  }
-  
-  .fadeInUp-animation {
-   animation: 1.5s fadeInUp;
-  }
-  
+ }
+ 
+ /* Apply animation to the heading */
+ .fadeInUp-animation {
+   animation: fadeInUp 1s ease-out;
+ }
+ 
+ /* Button styles */
+ .animated-button {
+   display: inline-block;
+   padding: 12px 24px;
+   font-size: 16px;
+   background-color: #278103;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   outline: none;
+   position: relative;
+   overflow: hidden;
+   margin-top: 20px; /* Add margin to separate button from text */
+   opacity: 0; /* Initially hide the button */
+   animation: fadeInUp 0.5s ease-in-out forwards; /* Apply fade-in animation */
+   /* Add hover effect */
+   transition: background-color 0.3s, transform 0.3s;
+ }
+ 
+ /* Button span styles */
+ .animated-button span {
+   position: relative;
+   z-index: 1;
+ }
+ 
+ /* Button hover effect */
+ .animated-button:hover {
+   background-color: #24a105;
+   transform: scale(1.05);
+ }
+ 
+ .animated-button::before {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 300%;
+   height: 300%;
+   background-color: rgba(255, 255, 255, 0.2);
+   border-radius: 50%;
+   transition: all 0.4s ease-out;
+   z-index: 0;
+   transform: translate(-50%, -50%);
+ }
+ 
