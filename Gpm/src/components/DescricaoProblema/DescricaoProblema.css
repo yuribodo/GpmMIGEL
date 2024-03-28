@@ -5,7 +5,44 @@
     margin: 0px 1.5%;
     display: inline-block;
     text-align: justify;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    background-color:  #008000;
+    color: white;
  
 }
+
+.proposta {
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 20px 30px;
+    margin: 0px 1.5%;
+    display: inline-block;
+    text-align: justify;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    background-color:  #008000;
+    color: white;
+
+
+}
+img {
+    max-width: 50%; 
+    height: auto;
+    padding: 10px;  
+   }
+   
+
+.texto {
+    padding: 30px;
+}
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
