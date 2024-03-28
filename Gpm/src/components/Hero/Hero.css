@@ -1,92 +1,99 @@
 /* Hero.css */
 
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Alinha os itens verticalmente no centro */
-    padding: 20px;
-    background-color: white; /* Cor de fundo */
-    height: 85vh; /* Altura total da viewport */
-    gap: 10px; /* Espaço entre os itens */
-   }
-   
-   h1 {
-    font-size: 2.5rem; /* Tamanho da fonte do título */
-    color: #333; /* Cor do texto */
-   }
-   
-   img {
-    max-width: 50%; /* Limita a largura da imagem para 50% do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-   }
-   
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  padding: 20px;
+  background-color: white; /* Cor de fundo */
+  height: 85vh; /* Altura total da viewport */
+  gap: 10px; /* Espaço entre os itens */
+}
 
+h1 {
+  font-size: 2.5rem; /* Tamanho da fonte do título */
+  color: #333; /* Cor do texto */
+}
 
+img {
+  max-width: 100%; /* Limita a largura da imagem para 100% do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+}
 
-
-  
-
-  /* Add animation keyframes */
+/* Add animation keyframes */
 /* Animation keyframes */
 @keyframes fadeInUp {
-   from {
-     opacity: 0;
-     transform: translateY(20px);
-   }
-   to {
-     opacity: 1;
-     transform: translateY(0);
-   }
- }
- 
- /* Apply animation to the heading */
- .fadeInUp-animation {
-   animation: fadeInUp 1s ease-out;
- }
- 
- /* Button styles */
- .animated-button {
-   display: inline-block;
-   padding: 12px 24px;
-   font-size: 16px;
-   background-color: #278103;
-   color: #fff;
-   border: none;
-   border-radius: 5px;
-   cursor: pointer;
-   outline: none;
-   position: relative;
-   overflow: hidden;
-   margin-top: 20px; /* Add margin to separate button from text */
-   opacity: 0; /* Initially hide the button */
-   animation: fadeInUp 0.5s ease-in-out forwards; /* Apply fade-in animation */
-   /* Add hover effect */
-   transition: background-color 0.3s, transform 0.3s;
- }
- 
- /* Button span styles */
- .animated-button span {
-   position: relative;
-   z-index: 1;
- }
- 
- /* Button hover effect */
- .animated-button:hover {
-   background-color: #24a105;
-   transform: scale(1.05);
- }
- 
- .animated-button::before {
-   content: '';
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   width: 300%;
-   height: 300%;
-   background-color: rgba(255, 255, 255, 0.2);
-   border-radius: 50%;
-   transition: all 0.4s ease-out;
-   z-index: 0;
-   transform: translate(-50%, -50%);
- }
- 
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Apply animation to the heading */
+.fadeInUp-animation {
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Button styles */
+.animated-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #278103;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px; /* Add margin to separate button from text */
+  opacity: 0; /* Initially hide the button */
+  animation: fadeInUp 0.5s ease-in-out forwards; /* Apply fade-in animation */
+  /* Add hover effect */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Button span styles */
+.animated-button span {
+  position: relative;
+  z-index: 1;
+}
+
+/* Button hover effect */
+.animated-button:hover {
+  background-color: #24a105;
+  transform: scale(1.05);
+}
+
+.animated-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transition: all 0.4s ease-out;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      height: auto;
+      padding: 100px 10px;
+  }
+  
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+}
