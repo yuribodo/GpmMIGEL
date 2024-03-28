@@ -1,51 +1,71 @@
-/* Navbar.css */
-
 .app__navbar {
-    display: flex;
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    align-items: center; /* Alinha os itens verticalmente no centro */
     background-color: #008000; /* Cor de fundo verde */
-    padding: 10px 20px;
     color: white; /* Cor do texto */
     width: 100%; /* Garante que a Navbar ocupe toda a largura da tela */
     margin: 0; /* Remove margens */
     top: 0px;
-    position: absolute;
+    position: fixed; /* Alterado para posição fixa */
     left: 0px;
-    padding: 0; /* Remove preenchimentos */
-   }
-   
-   .menu-icon {
+    padding: 20px 40px; /* Aumentado o preenchimento */
+    z-index: 1000; /* Para garantir que a navbar esteja acima de outros elementos */
+    height: 50px; /* Aumentando a altura da navbar */
+}
+.p__opensans{
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.menu-icon {
     background: none;
     border: none;
     cursor: pointer;
-   }
-   
-   .app__navbar-links {
+    display: none; /* Oculta o botão do menu por padrão */
+    font-size: 24px; /* Tamanho do ícone */
+}
+
+.app__navbar-links {
     list-style: none;
     display: flex;
     gap: 20px;
     justify-content: center; /* Centraliza os itens horizontalmente */
-   }
-   
-   .app__navbar-links.active {
-    display: block;
-   }
-   
-   .app__navbar-links li {
+}
+
+.app__navbar-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 70px; /* Altura da navbar */
+    left: 0;
+    background-color: #008000; /* Cor de fundo verde */
+    padding: 20px;
+}
+
+.app__navbar-links li {
     padding: 5px 0;
-   }
-   
-   .app__navbar-links li a {
+}
+
+.app__navbar-links li a {
     text-decoration: none;
     color: white;
-   }
-   
-   .app__navbar-links li a:hover {
-    color: #ddd;
-   }
+}
 
-   .imga {
+.app__navbar-links li a:hover {
+    color: #ddd;
+}
+
+.imga {
     margin-right: 8%;
     width: 70px;
-   }
+}
+
+@media only screen and (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Exibe o botão do menu em dispositivos móveis */
+        font-size: 28px; /* Aumenta o tamanho do ícone em dispositivos menores */
+    }
+    
+    .app__navbar-links {
+        display: none; /* Oculta os links por padrão em dispositivos móveis */
+    }
+}

@@ -3,7 +3,7 @@ import './DescricaoProblema.css'
 const DescricaoProblema = () => {
   return (
     <div>DescricaoProblema
-      <h1>Problema</h1>
+      <h1 className='textoo'>Problema</h1>
       <p class="paragrafo"> O Grupo de Pesquisa GP Mecatrônica realiza projetos voltados à robótica educacional,<br />
                            à manipulação de resíduos eletrônicos, à compostagem doméstica, à inserção de meninas<br />
                            no campo científico, dentre muitos outros projetos, no entanto, no entanto, enfrenta um <br />
