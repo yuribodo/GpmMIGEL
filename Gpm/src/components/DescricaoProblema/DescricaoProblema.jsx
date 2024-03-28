@@ -18,7 +18,7 @@ const DescricaoProblema = () => {
                            participar de projetos. A colaboraçãointerdisciplinar é <br /> crucial para o avanço da pesquisa, e a falta de visibilidade
                            pode limitar <br /> as oportunidades. </p >
 
-                           <img src={problemasolução} alt="Descrição da imagem" />                     
+                           <img className='imagempro' src={problemasolução} alt="Descrição da imagem" />                     
 
       <h1>Solução Proposta</h1> 
 
