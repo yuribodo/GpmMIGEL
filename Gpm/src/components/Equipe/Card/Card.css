@@ -1,0 +1,31 @@
+.texto__card{
+    color: snow;
+    font-size:18px;
+}
+
+.container_card {
+    background-color: #5db864;
+    border-radius: 10px;
+    width: 15%;
+    height: 350px; 
+    margin-left: 40px;
+}
+
+.caixa__cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.foto__card{
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 19%;
+    height: 160px;
+}
+
+.nome__card{
+    font-size:25px;
+    color:snow
+}

@@ -7,6 +7,7 @@ import Equipe from './components/Equipe/Equipe';
 import PropostaMER from './components/PropotaMER/PropostaMER';
 import DescricaoProblema from './components/DescricaoProblema/DescricaoProblema';
 import AnaliseRequisitos from './components/AnaliseRequisitos/AnaliseRequisitos';
+import Todos from './components/Todos/Todos';
 
 // Componentes de exemplo para as rotas
 
@@ -19,11 +20,11 @@ function App() {
       <div>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Hero />} />
-          <Route path="/home" element={<Hero />} />
+          <Route path="/" element={<Todos />} />
+          <Route path="/home" element={<Todos />} />
           <Route path="/equipe" element={<Equipe/>} />
-          <Route path="/analisederequisitos" element={<AnaliseRequisitos/>} />
           <Route path="/descricaodoproblema" element={<DescricaoProblema/>} />
+          <Route path="/analisederequisitos" element={<AnaliseRequisitos/>} />
           <Route path="/propostademer" element={<PropostaMER/>} />
           
         </Routes>
