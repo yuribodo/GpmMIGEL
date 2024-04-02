@@ -19,3 +19,11 @@
       transform: translateY(0);
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    .imagemmer {
+        max-width: 150%; /* Define a largura máxima da imagem como 100% do contêiner pai */
+        width: 100%;
+        padding-top: 20%;
+    }
+}

@@ -5,7 +5,7 @@ import './Equipe.css'
 
 const Equipe = () => {
   return (
-    <div>
+    <div className='container___equipe'>
       <h1 className='texto_equipe'>Equipe e Responsabilidade</h1>
       <Card/>
     </div>

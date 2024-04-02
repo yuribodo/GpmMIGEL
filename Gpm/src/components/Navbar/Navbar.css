@@ -1,14 +1,14 @@
 .app__navbar {
-    background-color: #008000; /* Cor de fundo verde */
-    color: white; /* Cor do texto */
-    width: 100%; /* Garante que a Navbar ocupe toda a largura da tela */
-    margin: 0; /* Remove margens */
+    background-color: #008000; 
+    color: white; 
+    width: 100%; 
+    margin: 0; 
     top: 0px;
-    position: fixed; /* Alterado para posição fixa */
+    position: fixed; 
     left: 0px;
-    padding: 20px 40px; /* Aumentado o preenchimento */
-    z-index: 1000; /* Para garantir que a navbar esteja acima de outros elementos */
-    height: 50px; /* Aumentando a altura da navbar */
+    padding: 20px 40px; 
+    z-index: 1000; 
+    height: 50px; 
 }
 .p__opensans{
     font-size: large;
@@ -19,15 +19,15 @@
     background: none;
     border: none;
     cursor: pointer;
-    display: none; /* Oculta o botão do menu por padrão */
-    font-size: 24px; /* Tamanho do ícone */
+    display: none; 
+    font-size: 24px; 
 }
 
 .app__navbar-links {
     list-style: none;
     display: flex;
     gap: 20px;
-    justify-content: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; 
 }
 
 .app__navbar-links.active {
@@ -35,9 +35,9 @@
     flex-direction: column;
     position: absolute;
     width: 100%;
-    top: 70px; /* Altura da navbar */
+    top: 70px; 
     left: 0;
-    background-color: #008000; /* Cor de fundo verde */
+    background-color: #008000; 
     padding: 20px;
 }
 
@@ -61,11 +61,11 @@
 
 @media only screen and (max-width: 768px) {
     .menu-icon {
-        display: block; /* Exibe o botão do menu em dispositivos móveis */
-        font-size: 28px; /* Aumenta o tamanho do ícone em dispositivos menores */
+        display: block; 
+        font-size: 28px; 
     }
     
     .app__navbar-links {
-        display: none; /* Oculta os links por padrão em dispositivos móveis */
+        display: none; 
     }
 }

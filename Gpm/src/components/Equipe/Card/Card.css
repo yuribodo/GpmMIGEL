@@ -9,6 +9,20 @@
     width: 15%;
     height: 350px; 
     margin-left: 40px;
+    animation: rotateCard 1s ease-in-out ; 
+}
+
+.container_card:hover {
+    transform: scale(1.1); 
+}
+
+@keyframes rotateCard {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
 }
 
 .caixa__cards{
@@ -28,4 +42,16 @@
 .nome__card{
     font-size:25px;
     color:snow
+}
+
+@media only screen and (max-width: 768px) {
+    .caixa__cards {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .container_card {
+        width: 80%; 
+        margin: 20px 0; 
+    }
 }

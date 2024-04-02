@@ -1,6 +1,6 @@
 import React from 'react';
-import Gp from '../../assets/GP.png'; // Importing image
-import './Hero.css'; // Importing CSS file
+import Gp from '../../assets/GP.png'; 
+import './Hero.css'; 
 import logo from '../../assets/Logo.png';
 
 const Hero = () => {

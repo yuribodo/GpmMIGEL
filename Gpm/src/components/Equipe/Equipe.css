@@ -1,6 +1,22 @@
-.texto_equipe{
+.texto_equipe {
     margin-top: 70px;
     padding: 60px;
-    margin-left:600px;
-   
+    text-align: center; /* Centraliza o texto */
 }
+
+.container___equipe {
+    
+    width: 100%; 
+    max-width: 100%; 
+    margin: 0; 
+    padding: 0; 
+    overflow-x: auto; 
+    min-height: 85vh; 
+}
+    
+    @media only screen and (max-width: 768px) {
+        .container {
+            overflow-x: hidden; 
+        }
+    }
+    
